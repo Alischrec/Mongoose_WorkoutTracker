@@ -1,18 +1,20 @@
 const express = require('express');
 const router = express.Router();
-const db = require("../models");
+const path = require('path')
 
 // index html
-app.get('/'), (req, res) => {
-    res.render('/');
-
-}
+router.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, '../public/html/index.html'))
+})
 
 // exercise html
-app.get('/exercise'), (req, res) => {
-}
+router.get('/exercise', (req, res) => {
+    res.sendFile(path.join(__dirname, '../public/html/exercise.html'))
+})
 
 // stats html
-app.get('/stats'), (req, res) => {
+router.get('/stats', (req, res) => {
+    res.sendFile(path.join(__dirname, '../public/html/stats.html'))
+})
 
-}
+module.exports = router
