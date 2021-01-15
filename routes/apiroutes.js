@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const db = require("../models");
+const db = require("../models/index.js");
 
 router.post('/workouts', (req, res) => {
     db.Workout.create({})
@@ -13,38 +13,23 @@ router.post('/workouts', (req, res) => {
 
 router.put('/workouts/:id', (req, res) => {
     const id = req.params.id;
-
-    db.Workout.update({
-        _id: mongojs.ObjectID(id)
-    }, {
-      $set: {
-        type: req.body.type,
-        name: req.body.name,
-        duration: req.body.duration,
-        weight: req.body.weight,
-        reps: req.body.reps,
-        sets: req.body.sets,
-        modified: Date.now()
-      }
-    },
-      (err, data) => {
-        if (err) {
-          console.log(err)
-        } else {
-          res.json(data)
-        }
+    db.Workout.findById(id, null, (err, data) => {
+      data.exercises.push(JSON.stringify(req.body))
+      data.save(null, (err2, data2) => {
+        res.json(data2)
       })
+    })
 })
 
 router.get('/workouts', (req, res) => {
     db.Workout.find({}, (err, data) => {
-  
+      res.json(data)
     })
 })
 
 router.get('/workouts/range', (req, res) => {
     db.Workout.find({}, (err, data) => {
-  
+    res.json(data);
     })
 })
 

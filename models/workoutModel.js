@@ -15,8 +15,8 @@ const Workout = new Schema({
           weight: Number,
           reps: Number,
           sets: Number
-      }]
-    
+      }],
+    totalDuration: Number
 })
 
-module.exports = Workout;
+module.exports = mongoose.model('Workout', Workout);
