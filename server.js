@@ -18,7 +18,7 @@ app.use('/api', routes);
 app.use(require('./routes/view.js'));
 
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/Workout', { useNewUrlParser: true });
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/workout', { useNewUrlParser: true });
 
 
 app.listen(PORT, () => {
