@@ -4,6 +4,8 @@
 
 Explore the [Project Page](https://github.com/Alischrec/Mongoose_WorkoutTracker)
 
+Check out the app [here](https://safe-fjord-74005.herokuapp.com/)
+
 ## Table of Contents
 
 * [About the Project](#about-the-project)
