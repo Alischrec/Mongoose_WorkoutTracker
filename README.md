@@ -19,21 +19,20 @@ Explore the [Project Page](https://github.com/Alischrec/Mongoose_WorkoutTracker)
 * [Acknowledgements](#acknowledgements)
 
 ## About the Project:
-<!-- The focus of this project was to build a Node CLI that acts as an active note taker app.  -->
+The focus of this project was to build a Fitness Tracker application using Node packages and a MongoDB database. 
 
-<!-- ![Project Gif](gif.gif) -->
+![Project Gif](./gif.gif)
 
-<!-- ### JavaScript:
-* [index.js](https://github.com/Alischrec/Mongoose_WorkoutTracker/blob/main/index.js)
-* [notes.js](https://github.com/Alischrec/Mongoose_WorkoutTracker/blob/main/notes.js) -->
+### JavaScript:
+* [Server.js](https://github.com/Alischrec/Mongoose_WorkoutTracker/blob/main/server.js)
 
-<!-- ### Assets:
-* [CSS](https://github.com/Alischrec/Mongoose_WorkoutTracker/tree/main/public/assets/css)
-* [JS](https://github.com/Alischrec/Mongoose_WorkoutTracker/tree/main/public/assets/js)
-* [Database](https://github.com/Alischrec/Mongoose_WorkoutTracker/tree/main/db) -->
+### Assets:
+* [CSS](https://github.com/Alischrec/Mongoose_WorkoutTracker/blob/main/public/style/style.css)
+* [JS](https://github.com/Alischrec/Mongoose_WorkoutTracker/tree/main/public/js)
+* [Seed Data](https://github.com/Alischrec/Mongoose_WorkoutTracker/tree/main/seeders)
 
 ### Built With:
-<!-- * This app is build upon [Node.js](https://nodejs.org/en/), [Express package](https://expressjs.com/), and the [Heroku](https://dashboard.heroku.com/apps) application. -->
+* This app is build upon [Node.js](https://nodejs.org/en/), [Express package](https://expressjs.com/), [MongoDB](https://www.mongodb.com/), and [Mongoose](https://mongoosejs.com/).
 
 ## Getting Started:
 To get a local copy up and running follow the steps below.
